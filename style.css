@@ -1,0 +1,14 @@
+.box{
+    color:black;
+    border: 2px solid #000000;
+    background-color: #818283f0;
+    /*margin: 100px 200px 200px 200px;*/
+    padding: 50px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+h2{
+    margin: 10px;
+    padding: 10px;
+}
