@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Collatz Sequence Analyzer</title>
+</head>
+
+<body>
+    <h1>Collatz Sequence Analyzer</h1>
+    <script>
+
+        let num = prompt("Enter positive number");
+        num = Number(num);
+        let i = 0;
+        if (num >= 0) {
+            while (i <= 500 && num != 1) {
+                if (num % 2 == 0) {
+                    num = num / 2;
+                    console.log(num);
+                }
+                else {
+                    num = 3 * num + 1
+                }
+                i++;
+            }
+        }
+        if (i <= 500) {
+            console.log(`Reached 1 in ${i} steps.`);
+        }
+        else {
+            console.log(`Doesn't reached 1 after 500 iteerations`);
+        }
+
+    </script>
+</body>
+
+</html>
